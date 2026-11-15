@@ -77,6 +77,7 @@ CharacterManagerNew/
 Nama : [JOPI CHAN]
 Nim : [253303621235]
 Google Docs Bagian D :  https://1drv.ms/w/c/a197bb3390d52b1d/IQCfSQy2OWmtTZzS3EMCW56VAUFQgrdwih30_6rbRptsnb8?e=eR6OuY                    
+<<<<<<< HEAD
 
 _________________________________________________________________________________________________________________________________
 
