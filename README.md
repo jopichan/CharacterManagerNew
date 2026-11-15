@@ -26,9 +26,9 @@ javavisual-tp03-253303621235/
 
 # Identitas
 
-Nama: JOPI CHAN
-Nim:253303621235
-Google Docs Bagian D : https://1drv.ms/w/c/265fce39944988d2/IQBSaEjTa1-HRouFOAIbQDK6Ab6l14r5AjI12270OtqmmGg?e=IqIOHU
+Nama : [JOPI CHAN]
+Nim : [253303621235]
+Google Docs Bagian D : [https://1drv.ms/w/c/265fce39944988d2/IQBSaEjTa1-HRouFOAIbQDK6Ab6l14r5AjI12270OtqmmGg?e=IqIOHU]
 
 
                        
