@@ -1,6 +1,4 @@
-package com.unpri.charactermanager;
-
-import com.unpri.charactermanager.model.Character;
+package com.unpri.charactermanager.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +11,7 @@ public class CharacterManager {
         if (character == null) {
             return false;
         }
-        if (characters.contains(character)) { // pakai Character.equals() -> bandingkan nama
-            System.out.println("Gagal: karakter dengan nama '"
-                    + character.getName() + "' sudah ada.");
+        if (characters.contains(character)) {
             return false;
         }
         characters.add(character);
@@ -32,7 +28,7 @@ public class CharacterManager {
         return null;
     }
 
-    // Hapus karakter berdasarkan nama. Return true jika berhasil.
+    // Hapus karakter berdasarkan nama.
     public boolean removeCharacter(String name) {
         Character target = findByName(name);
         if (target == null) {
@@ -45,9 +41,42 @@ public class CharacterManager {
         return characters.size();
     }
 
-    // Mengembalikan SALINAN list, bukan referensi asli,
-    // supaya list internal tidak bisa diubah dari luar.
+    // Mengembalikan SALINAN list, bukan referensi asli.
     public List<Character> getAllCharacters() {
         return new ArrayList<>(characters);
+    }
+
+    /**
+     * Mencari karakter dengan attackPower tertinggi.
+     *
+     * @return karakter terkuat, atau null jika belum ada karakter
+     */
+    public Character findStrongest() {
+        if (characters.isEmpty()) {
+            return null;
+        }
+        Character strongest = characters.get(0);
+        for (Character c : characters) {
+            if (c.getAttackPower() > strongest.getAttackPower()) {
+                strongest = c;
+            }
+        }
+        return strongest;
+    }
+
+    /**
+     * Menghitung rata-rata level semua karakter.
+     *
+     * @return rata-rata level, atau 0.0 jika belum ada karakter
+     */
+    public double getAverageLevel() {
+        if (characters.isEmpty()) {
+            return 0.0;
+        }
+        int total = 0;
+        for (Character c : characters) {
+            total += c.getLevel();
+        }
+        return (double) total / characters.size();
     }
 }
