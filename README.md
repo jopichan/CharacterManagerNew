@@ -77,7 +77,6 @@ CharacterManagerNew/
 Nama : [JOPI CHAN]
 Nim : [253303621235]
 Google Docs Bagian D :  https://1drv.ms/w/c/a197bb3390d52b1d/IQCfSQy2OWmtTZzS3EMCW56VAUFQgrdwih30_6rbRptsnb8?e=eR6OuY                    
-<<<<<<< HEAD
 
 _________________________________________________________________________________________________________________________________
 
@@ -140,6 +139,72 @@ CharacterManagerNew/
 └── README.md
 
 # Identitas
-Nama : [JOPI CHAN]
-Nim : [253303621235]
-Google Docs Bagian D : https://1drv.ms/w/c/a197bb3390d52b1d/IQCmVvgWy62TRZ3MUnxMO8YPAU_S4tZIRRheUmQU-QijTKQ?e=1W13qb
+Nama : JOPI CHAN
+Nim: 253303621235
+Google Doc : https://1drv.ms/w/c/a197bb3390d52b1d/IQCmVvgWy62TRZ3MUnxMO8YPAU_S4tZIRRheUmQU-QijTKQ?e=egPCxs
+
+_________________________________________________________________________________________________________________________________
+
+# TP10 - GUI Character Manager
+
+# Deskripsi
+
+Mengapa Warna Disimpan di AppTheme dan Bukan di Character?
+Warna disimpan pada kelas AppTheme karena warna merupakan bagian dari tampilan (View), bukan bagian dari data karakter (Model). Kelas Character bertugas menyimpan informasi penting seperti nama, tipe, dan level karakter, sehingga tidak perlu mengetahui bagaimana karakter tersebut ditampilkan pada layar.
+
+Dengan memisahkan warna ke dalam AppTheme, perubahan tampilan dapat dilakukan tanpa mengubah struktur data karakter. Pendekatan ini juga membuat kode lebih rapi, mudah dirawat, dan sesuai dengan prinsip MVC yang memisahkan data dan presentasi.
+
+Properti Tambahan yang Dipilih
+1. Color Theme
+Aplikasi menggunakan AppTheme untuk menyimpan warna yang berbeda pada setiap tipe karakter seperti Warrior, Mage, Archer, dan Healer.
+
+Alasan:
+
+Tampilan menjadi lebih menarik.
+Pengguna dapat membedakan tipe karakter dengan cepat melalui warna.
+2. Average Level Statistic
+Aplikasi menampilkan rata-rata level seluruh karakter pada bagian bawah jendela.
+
+Alasan:
+
+Memberikan informasi statistik secara langsung kepada pengguna.
+Mempermudah analisis perkembangan karakter yang tersimpan dalam sistem.
+
+# Hail Output Sebelum
+![alt text](Screnshoot/sebelumtp10.png)
+
+# Hail Output Sesudah
+![alt text](Screnshoot/suesudahtp10.png)
+
+# Struktur Project
+CharacterManagerNew/
+│
+├── README.md
+│
+├── Screenshot/
+│   ├── tp3.png
+│   ├── tp5.png
+│   ├── tp8.png
+│   ├── sebelumtp8.png
+│   └── sesudahtp8.png
+│
+└── src/
+    └── com/
+        └── unpri/
+            └── charactermanager/
+                ├── model/
+                │   ├── Character.java
+                │   ├── CharacterManager.java
+                │   └── CharacterType.java
+                │
+                ├── view/
+                │   ├── AppTheme.java
+                │   └── MainWindow.java
+                │
+                └── Main.java
+
+
+ # Identitas
+Nama : JOPI CHAN
+Nim: 253303621235
+Google Doc : https://1drv.ms/w/c/a197bb3390d52b1d/IQBaKjcsZ7QuRoemaHkUP6kQAXtzX8ExsPrNBGAZkUUjkBk?e=zqGnHt            
