@@ -211,7 +211,7 @@ Google Doc : https://1drv.ms/w/c/a197bb3390d52b1d/IQBaKjcsZ7QuRoemaHkUP6kQAXtzX8
 
 ________________________________________________________________________
 
-# Character Manager — TP3 (Java Visual SIH-6406)
+# Character Manager — TP12 (Java Visual SIH-6406)
 
 # Deskripsi
 
