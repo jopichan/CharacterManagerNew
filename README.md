@@ -115,7 +115,7 @@ sendiri.]
   level diperbarui otomatis lewat `refreshView()`.
 
   # Hasil Output Sebelum
-![alt text](Screnshoot/sebelumtp8.png)
+ ![alt text](Screnshoot/sebelumtp10.png)
 
   # Hasil Output Sesudah
   ![alt text](Screnshoot/sesudahtp8.png)
@@ -208,3 +208,82 @@ CharacterManagerNew/
 Nama : JOPI CHAN
 Nim: 253303621235
 Google Doc : https://1drv.ms/w/c/a197bb3390d52b1d/IQBaKjcsZ7QuRoemaHkUP6kQAXtzX8ExsPrNBGAZkUUjkBk?e=zqGnHt            
+
+________________________________________________________________________
+
+# Character Manager — TP3 (Java Visual SIH-6406)
+
+# Deskripsi
+
+Struktur Panel Bersarang
+uktur panel bersarang (nested panel) untuk memisahkan bagian antarmuka menjadi beberapa area yang memiliki tanggung jawab berbeda. Panel utama menggunakan BorderLayout sebagai root container, kemudian setiap area seperti header, daftar karakter, legenda, dan status bar ditempatkan pada region yang sesuai.
+
+Bagian header menggunakan JPanel yang berisi komponen input karakter seperti nama, level, tipe, dan tombol tambah. Bagian tengah menggunakan JScrollPane yang membungkus panel daftar karakter sehingga daftar dapat di-scroll ketika jumlah data bertambah banyak. Di sisi kanan terdapat panel legenda untuk menampilkan kategori tipe karakter, sedangkan bagian bawah berisi panel status yang menampilkan informasi rata-rata level karakter.
+
+Struktur panel bersarang membuat antarmuka lebih terorganisir, mudah dikembangkan, dan mendukung proses resize jendela tanpa merusak tata letak komponen.
+
+Alasan Panel Tambahan dan Layout yang Dipilih
+Layout yang Digunakan
+BorderLayout sebagai layout utama JFrame.
+BoxLayout untuk daftar karakter.
+FlowLayout pada panel input bagian atas.
+Alasan Pemilihan
+BorderLayout dipilih karena mempermudah pembagian area aplikasi menjadi header, konten utama, legenda, dan status bar. BoxLayout digunakan untuk menyusun daftar karakter secara vertikal sehingga data dapat bertambah secara dinamis. FlowLayout digunakan pada panel input karena komponen dapat tersusun rapi dari kiri ke kanan.
+
+Layout yang Ditolak
+Null Layout
+GridLayout sebagai layout utama
+Null Layout tidak dipilih karena setiap komponen harus diatur menggunakan koordinat manual (setBounds) sehingga sulit menyesuaikan ukuran jendela ketika aplikasi di-resize. GridLayout juga tidak digunakan sebagai layout utama karena seluruh area akan memiliki ukuran yang sama sehingga kurang cocok untuk aplikasi yang memiliki header, konten utama, dan status bar dengan ukuran berbeda.
+
+Tabel Pengamatan Resize
+Kondisi	Prediksi	Hasil
+Jendela Diperbesar	Daftar karakter melebar dan area scroll bertambah	Sesuai
+Jendela Diperkecil	Scrollbar tetap muncul dan data masih dapat diakses	Sesuai
+Tinggi Jendela Berkurang	Komponen menyesuaikan area yang tersedia	Sesuai
+
+# Hasil Output Ukuran Normal
+![alt text](Screnshoot/ukurannormaltp12.png)
+
+# Hasil Output Ukuran Besar
+![alt text](Screnshoot/ukuranbesartp12.png)
+
+# Hasil Output Ukuran Kecil
+![alt text](Screnshoot/ukurankeciltp12.png)
+
+# Struktur Project
+CharacterManagerNew/
+│
+├── README.md
+│
+├── screenshots/
+│   ├── tp3.png
+│   ├── tp5.png
+│   ├── tp8.png
+│   ├── sebelumtp8.png
+│   ├── sesudahtp8.png
+│   ├── sesudahtp10.png
+│   ├── wireframe_tp12.png
+│   ├── tp12_awal.png
+│   ├── tp12_besar.png
+│   └── tp12_kecil.png
+│
+└── src/
+    └── com/
+        └── unpri/
+            └── charactermanager/
+                │
+                ├── model/
+                │   ├── Character.java
+                │   ├── CharacterManager.java
+                │   └── CharacterType.java
+                │
+                ├── view/
+                │   ├── AppTheme.java
+                │   └── MainWindow.java
+                │
+                └── Main.java
+
+# Identitas
+Nama : Jopi Chan
+Nim : 253303621235
+Google Doc : https://1drv.ms/w/c/a197bb3390d52b1d/IQBaKjcsZ7QuRoemaHkUP6kQAXtzX8ExsPrNBGAZkUUjkBk?e=Uqvzu5
